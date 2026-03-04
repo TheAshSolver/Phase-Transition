@@ -18,7 +18,7 @@ cmpa = ListedColormap(['White', 'Orange'])
 
 im = ax.imshow(grid, cmap =cmpa)
 def update(frame):
-        for i in range(N*N/2):
+        for i in range(N*N//2):
             i = np.random.randint(0,N-1)
             j = np.random.randint(0, N-1)
             C = c_slider.val
